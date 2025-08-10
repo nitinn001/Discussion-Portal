@@ -1,0 +1,309 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #f0eeee;
+}
+.heading
+{
+    padding: 5px 10px;
+    font-size: 2rem;
+    background-color: #008082;
+}
+
+.container
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+/* Question List Area */
+.questions-col
+{
+    background-color: #f0eeee;
+    width: 50%;
+    height: 100vh;
+    padding-left: 2rem;
+    
+    /* Head */
+    .head
+    {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 70px;
+
+        button 
+        {
+            font-size: 1rem;
+            border-radius: 6px;
+            padding: 5px;
+            background-color: #057bf7;
+            color: #fff;
+            font-weight: 500;
+            border: none;
+        }
+
+        .new-question
+        {
+            padding: 8px;
+        }
+
+        /* Search Input */
+        .searchInpt
+        {
+            font-size: 1rem;
+            padding: 8px;
+            margin-top: 10px;
+            border-radius: 15px;
+            border: none;
+            display: inline;
+            /* margin-right: 15px; */
+        }
+
+        .search-btn
+        {
+            font-size: 1.5rem;
+            background-color: transparent;
+            display: inline;
+        }
+        margin-bottom: 30px;
+    }
+
+    /* Question list section */
+    .question-list
+    {
+        padding-top: 30px;
+
+        /* Question */
+        .question
+        {
+            position: relative;
+            width: 80%;
+            max-height: 8rem;
+            display: block;
+            margin-bottom: 12px;
+            box-shadow: 6px 6px 10px #039c9e;
+            border-radius: 15px;
+            padding: 8px;
+
+            .time-added
+            {
+                position: absolute;
+                bottom: 5px;
+                right: 10px;
+            }
+        }
+    }
+
+}
+
+
+/* Input Area */
+.post-question
+{
+    width: 50%;
+    height: 100vh;
+    text-align: left;
+    padding: 4rem 8px;
+    font-weight: 500;    
+    /* heading input section */
+    .head
+    {
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+    }
+    
+    /* Subject */
+    .subject
+    {
+    font-family: Roboto;
+    display: block;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    margin: 20px auto;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    }
+        
+    /* Text area */
+    .ques
+    {
+        font-family: Roboto;
+        display: block;
+        width: 80%;
+        min-height: 10rem;
+        margin: auto;
+        resize: none;
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    /* Submit Button */
+    .submit
+    {
+        display: block;
+        background-color: #fff;
+        color: #2186f3;
+        padding: 4px;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 8px 4rem;
+        border: 2px solid #2186f3;
+    }
+}
+
+.discussion-area
+{
+    /* !"Response" heading */
+    h3
+    {
+        margin: 2rem 0;
+    }
+
+    position: absolute;
+    top: 40px;
+    /* background-color: #f3f; */
+    width: 50%;
+    right: 0;
+
+    .question-subject
+    {
+        margin: 0;
+    }
+    
+    .topic{ margin: 3rem 0 1rem 0;}
+
+    /* Response container for response lists */
+    .responseContainer
+    {
+        .response
+        {
+            position: relative;
+            h3{margin: 5px;}
+            
+            .respID
+            {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+            .reaction
+            {
+                margin-top: 15px;
+
+                .like, .dislike
+                {
+                    margin-top: 15px;
+                    opacity: 0.7;
+                }
+                .like:hover, .dislike:hover
+                {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    /* Form response container */
+
+    .response-container
+    {
+        margin-top: 3rem;
+        width: 100%;
+
+        h2
+        {
+            text-decoration: underline;
+        }
+         
+        .respHeading
+        {
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 2px solid #474747;
+            border-radius: 4px; 
+            font-size: 1rem;
+            font-weight: 700;
+            }
+        .responseComment
+        {
+            width: 100%;
+            font-family: Roboto;
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 2px solid #474747;
+            border-radius: 4px; 
+            font-size: 1rem;
+            min-height: 10rem;
+            resize: none;
+        }
+
+        .submitResponse
+        {
+            display: block;
+            background-color: #2186f3;
+            color: #fff;
+            padding: 4px;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+    }
+
+    padding-left: 15px;
+    h2
+    {
+        margin-bottom: 2rem;
+    }
+
+    .discussion-topic
+    {
+        position: relative;
+
+        .question-answer
+        {
+            margin-bottom: 20px;
+        }
+    }
+
+    .response
+    {
+        border: 1px solid;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        padding: 6px;
+        text-wrap: wrap;
+    }
+}
+
+.hidden
+{
+    display: none;
+}
+
+.fav
+{
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    opacity: 100%;
+}
+.fav:hover
+{
+    cursor: pointer;
+    opacity: 80%;
+}

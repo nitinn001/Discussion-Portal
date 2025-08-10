@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Discussion Form</title>
+</head>
+<body>
+
+    <div class="heading">Discussion Portal</div>
+    <div class="container">
+        <!-- Question List Column -->
+        <div class="questions-col">
+            <!-- header -->
+            <div class="head">
+                <button class="new-question">New Question Form</button>
+                <div class="search">
+                    <input class="searchInpt" type="text" placeholder="Search">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+            <div class="questions-list-area">
+                <div class="question-list">
+                    <!-- Sample how list look -->
+                    
+                    <!-- <div class="question">
+                        <h2 class="question-subject">Subject</h2>
+                        <p class="question-answer">question</p>
+                        <div class="hidden" id=10>id</div>
+                        <span class='fav' style="opacity:0.6">⭐</span>
+                        <div class="time-added">12:31</div>
+                    </div> -->
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Post Question column -->
+        <div class="post-question ">
+
+            <!-- welcome message -->
+            <div class="head">
+                <h2>Welcome to Discussion Portal</h2>
+                <p>Enter a subject and question to get started</p>
+            </div>
+            
+            <!-- Subject -->
+            <input class="subject" type="text" placeholder="Subject" autofocus>
+
+            <!-- Text area -->
+            <textarea name="answer" class="ques" placeholder="Enter Question Here"></textarea>
+
+            <!-- Submit Button -->
+            <button class="submit">Sumit</button>
+        </div>
+
+    <!-- Display question and response -->
+        <div class="discussion-area hidden">
+            <!-- Discussion topic  -->
+            <h3 class="topic">Topic</h3>
+            <div class="discussion-topic">
+                <!-- Topic for discussion will appear here -->
+            </div>
+            <h3>Response</h3>
+            
+            <!-- Responses list -->
+            <div class="responseContainer">
+                <div class="responses-list">
+                    <!-- <div class="response">
+                        <h1>heading</h1> <span>respId</span>
+                        <p>response</p>
+                        <div class="reaction">
+                            <span class="like">👍 uc</span>
+                            <span class="dislike">👎 dc</span>
+                            <span class="net">${reaction[2]}</span>
+                        </div>
+                    </div>  -->
+                </div>
+            </div>
+
+            <div class="response-container">
+                <h2>Add Response</h2>
+                <!-- heading -->
+                <input class="subject respHeading" type="text" placeholder="Heading" >
+            
+                <!-- Comment -->
+                <textarea name="answer" class="ques responseComment" placeholder="Comment"></textarea>
+            
+                <!-- Submit Button -->
+                <button class="submitResponse">Sumit</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="./script.js"></script>
+    <script src="reactionManager.js"></script>
+</body>
+</html>
+<!-- Saving the file -->
